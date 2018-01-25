@@ -2,7 +2,7 @@ class FreeMemory
 
   def initialize (output)
     # [total, Used(all), free, shared, buffers, cached, app used, app free, swap total, swap used, swap free]
-    @memory_stats = output.match(/Mem:\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+).*cache:\s+(\d+)\s+(\d+).*Swap:\s+(\d+)\s+(\d+)\s+(\d+)/m)
+    @memory_stats = output.match(/Mem:\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+).*Swap:\s+(\d+)\s+(\d+)\s+(\d+)/m)
   end
 
   def total_memory
